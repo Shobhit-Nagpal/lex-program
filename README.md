@@ -67,7 +67,7 @@ Ex: lex.l
 Write out the program in the file and save it.
 
 ## Step 4:
-In your terminal, make sure you are in the same directory where your lex file is present and write the following commands to compile and execute the program:<br>
-```flex filename.l``` <br>
-```cc lex.yy.c -lfl```<br>
+In your terminal, make sure you are in the same directory where your lex file is present and write the following commands to compile and execute the program:<br><br>
+```flex filename.l``` <br><br>
+```cc lex.yy.c -lfl```<br><br>
 ```./a.out```
