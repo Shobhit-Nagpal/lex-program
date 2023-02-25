@@ -26,7 +26,7 @@ A lex program contains 3 parts:
 # 1. Declaration section
 The declaration section is the part where we declare variables, constants and regular expressions. Header files can also be declared here.
 
-We write the declaration section in the document as follows: <br>
+We write the declaration section in the document as follows: <br><br>
 %{ <br>
   varibles, constants, header files <br>
 %} <br>
