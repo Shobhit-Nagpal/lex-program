@@ -15,7 +15,7 @@ How do you make a lexical analyzer?
 Through LEX.
 
 What is LEX?
-It is a program or software that generates lexical analyzers. T
+It is a program or software that generates lexical analyzers.
 
 Structure of a lex program:
 A lex program contains 3 parts:
@@ -26,10 +26,10 @@ A lex program contains 3 parts:
 # 1. Declaration section
 The declaration section is the part where we declare variables, constants and regular expressions. Header files can also be declared here.
 
-We write the declaration section in the document as follows:
-%{
-  varibles, constants, header files
-%}
+We write the declaration section in the document as follows: <br>
+%{ <br>
+  varibles, constants, header files <br>
+%} <br>
 
 regular expressions
 
@@ -56,8 +56,8 @@ In the second stage, the 'lex.yy.c' is compiled with a C compiler and the output
 # How to write and run a lex program in Ubuntu?
 
 ## Step 1:
-Install flex through your terminal with the command <br>
-<code>sudo apt-get install flex</code>
+Install flex through your terminal with the command <br><br>
+```sudo apt-get install flex```
 
 ## Step 2:
 Create a directory and a file with the extension '.l' inside the directory.
@@ -68,6 +68,6 @@ Write out the program in the file and save it.
 
 ## Step 4:
 In your terminal, make sure you are in the same directory where your lex file is present and write the following commands to compile and execute the program:<br>
-<code>flex filename.l</code> <br>
-<code>cc lex.yy.c -lfl</code><br>
-<code>./a.out</code>
+```flex filename.l``` <br>
+```cc lex.yy.c -lfl```<br>
+```./a.out```
