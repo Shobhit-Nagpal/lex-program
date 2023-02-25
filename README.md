@@ -1,7 +1,7 @@
 # lex-program
 # Introduction
-1. <a href="theory">Theory</a>
-2. <a href="implementation">Implementation</a>
+1. <a href="#theory">Theory</a>
+2. <a href="#implementation">Implementation</a>
 
 # <a id="theory">Theory</a>
 In compiler design, one of the phases that a compiler goes through is 'Lexical Analysis'.
@@ -23,7 +23,7 @@ A lex program contains 3 parts:
 2. Translation rules
 3. Auxiliary functions
 
-# Declaration section
+# 1. Declaration section
 The declaration section is the part where we declare variables, constants and regular expressions. Header files can also be declared here.
 
 We write the declaration section in the document as follows:
@@ -33,7 +33,7 @@ We write the declaration section in the document as follows:
 
 regular expressions
 
-# Translation rules
+# 2. Translation rules
 The translation rules part is where we declare the rules of identifying a pattern and performing an action based on the relevant pattern. The actions are C-language statements.
 
 We write the rules in between '%%' symbols starting before and after, shown as follows:
@@ -42,7 +42,7 @@ We write the rules in between '%%' symbols starting before and after, shown as f
 pattern {action}
 %%
 
-# Auxiliary functions
+# 3. Auxiliary functions
 The auxiliary functions part is where the functions that are used in the actions are written. The functions are compiled separately and loaded wit lexical analyzer.
 
 How is a lex program compiled?
@@ -56,8 +56,8 @@ In the second stage, the 'lex.yy.c' is compiled with a C compiler and the output
 # How to write and run a lex program in Ubuntu?
 
 ## Step 1:
-Install flex through your terminal with the command
-`sudo apt-get install flex`
+Install flex through your terminal with the command <br>
+<code>sudo apt-get install flex</code>
 
 ## Step 2:
 Create a directory and a file with the extension '.l' inside the directory.
@@ -67,7 +67,7 @@ Ex: lex.l
 Write out the program in the file and save it.
 
 ## Step 4:
-In your terminal, make sure you are in the same directory where your lex file is present and write the following commands to compile and execute the program:
-`flex filename.l`
-`cc lex.yy.c -lfl`
-`./a.out`
+In your terminal, make sure you are in the same directory where your lex file is present and write the following commands to compile and execute the program:<br>
+<code>flex filename.l</code> <br>
+<code>cc lex.yy.c -lfl</code><br>
+<code>./a.out</code>
