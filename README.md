@@ -36,11 +36,11 @@ regular expressions
 # 2. Translation rules
 The translation rules part is where we declare the rules of identifying a pattern and performing an action based on the relevant pattern. The actions are C-language statements.
 
-We write the rules in between '%%' symbols starting before and after, shown as follows:
+We write the rules in between '%%' symbols starting before and after, shown as follows: <br>
 
-%%
-pattern {action}
-%%
+%% <br>
+pattern {action} <br>
+%% <br>
 
 # 3. Auxiliary functions
 The auxiliary functions part is where the functions that are used in the actions are written. The functions are compiled separately and loaded wit lexical analyzer.
